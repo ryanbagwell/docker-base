@@ -22,6 +22,7 @@ RUN npm --version
 #
 # Set some ssh configs
 #
+RUN mkdir -p /root/.ssh
 RUN touch /root/.ssh/known_hosts
 RUN chmod 644 /root/.ssh/known_hosts
 RUN echo "Host *\r\n    StrictHostKeyChecking no" > /root/.ssh/config
