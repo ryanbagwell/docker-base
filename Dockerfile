@@ -5,6 +5,7 @@ MAINTAINER ryanbagwell
 ENV DEPLOY_ENV development
 
 RUN apt-get -y update
+RUN apt-get install -y python-software-properties
 RUN apt-get install -y git
 RUN apt-get install -y mercurial meld
 RUN apt-get install -y subversion
