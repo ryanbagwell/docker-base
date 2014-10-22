@@ -10,7 +10,8 @@ RUN apt-get install -y python-software-properties
 RUN apt-get install -y git
 RUN apt-get install -y mercurial meld
 RUN apt-get install -y subversion
-
+RUN apt-get install -y vim
+RUN apt-get install -y curl
 #
 # Install node
 #
